@@ -9,7 +9,6 @@ function Product(props) {
         <button
           onClick={() => {
             props.addToShoppingCart(props.name);
-            props.addToShoppingCart(props.price);
           }}
         >
           Add

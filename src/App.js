@@ -26,7 +26,7 @@ class App extends Component {
   addToShoppingCart = (item) => {
     let total = this.state.total;
     if (item == "Kiara") {
-      total += 1.99;
+      total += 2.00;
     }
     if (item == "Bah") {
       total += 1.5;
@@ -34,10 +34,14 @@ class App extends Component {
     if (item == "Noemi") {
       total += 2.5;
     }
-  
-  if (item == "Jibril") {
-    total += 2.5;
-  }
+
+    if (item == "Jibril") {
+      total += 2.5;
+    }
+    if (item == "Dares") {
+      total += 2.5;
+    }
+    // [Kiarra, 150, Mamadu, 2.50]
     this.setState((state) => {
       state.cart.push(item);
       return state;
@@ -68,8 +72,8 @@ class App extends Component {
         <div className="main">
           <ProductList
             inventory={this.inventory}
-            add={this.addToShoppingCart}
-            remove={this.removeFromShoppingCart}
+            addToShoppingCart={this.addToShoppingCart}
+            removeFromShoppingCart={this.removeFromShoppingCart}
           />
         </div>
       </div>
