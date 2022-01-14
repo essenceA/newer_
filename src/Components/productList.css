@@ -14,13 +14,13 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 250px;
-  background-color: #eef;
+  background-color: #cccc;
 }
 
 .ProductList .Product h2 {
   margin: 0;
   padding: 10px;
-  background-color: #85b24f;
+  background-color: #00cccc;
   color: white;
   text-align: center;
   font-size: 2rem;
@@ -45,10 +45,10 @@
   margin-right: 6px;
   font-size: 1.5rem;
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 204, 204);
 }
 
 .ProductList .Product .buttons button:hover {
   color: white;
-  background-color: #85b24f;
+  background-color: #00cccc;
 }
